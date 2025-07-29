@@ -26,7 +26,7 @@ export default function Books() {
     <div className="p-4 items-center text-center">
       <h2 className="text-2xl font-bold mb-4">Book List</h2>
       <table className="table-auto w-full border border-gray-600">
-        <thead className="bg-gray-200">
+        <thead className="text-black bg-gray-200">
           <tr>
             <th className="p-2">Title</th>
             <th className="p-2">Author</th>

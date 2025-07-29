@@ -12,6 +12,15 @@ export const bookApi = createApi({
       query: () => "/",
       providesTags: ["Book"],
     }),
+    // add new Book
+    addBook: builder.mutation<IBook, Partial<IBook>>({
+      query: (data) => ({
+        url: "/",
+        method: "POST",
+        body: data,
+      }),
+      invalidatesTags: ["Book"],
+    }),
     // edit book
     editBook: builder.mutation<IBook, { id: string; data: Partial<IBook> }>({
       query: ({ id, data }) => ({
@@ -34,5 +43,9 @@ export const bookApi = createApi({
   }),
 });
 
-export const { useGetBooksQuery, useEditBookMutation, useDeleteBookMutation } =
-  bookApi;
+export const {
+  useGetBooksQuery,
+  useEditBookMutation,
+  useDeleteBookMutation,
+  useAddBookMutation,
+} = bookApi;

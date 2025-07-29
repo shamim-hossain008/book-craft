@@ -17,7 +17,7 @@ export default function BorrowSummary() {
       <h2 className="text-2xl font-bold mb-4">Borrow Summary</h2>
 
       <table className="table-auto w-1/2 h-full border border-gray-600 items-center text-center mx-auto">
-        <thead className="bg-gray-200">
+        <thead className="text-black bg-gray-200">
           <tr>
             <th className="p-2">Title</th>
             <th className="p-2">ISBN</th>

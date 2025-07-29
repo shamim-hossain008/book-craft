@@ -27,9 +27,9 @@ export const router = createBrowserRouter([
         element: <BorrowSummary />,
       },
       {
-        path:"/edit-book/:id",
-        element:<EditBook/>
-      }
+        path: "/edit-book/:id",
+        element: <EditBook />,
+      },
     ],
   },
 ]);
