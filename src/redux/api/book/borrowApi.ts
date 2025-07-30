@@ -1,9 +1,11 @@
 import type { IBorrow, IBorrowInput, IBorrowSummary } from "@/types/borrow";
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
+const baseUrl = import.meta.env.BORROW_API_BASE_URL;
+
 export const borrowApi = createApi({
   reducerPath: "borrowApi",
-  baseQuery: fetchBaseQuery({ baseUrl: "/api/borrow" }),
+  baseQuery: fetchBaseQuery({ baseUrl }),
   tagTypes: ["Borrow", "Book"],
   endpoints: (builder) => ({
     createBorrow: builder.mutation<

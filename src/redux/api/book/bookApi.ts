@@ -1,9 +1,11 @@
 import type { IBook } from "@/types/book";
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
+const baseUrl = import.meta.env.BOOK_API_BASE_URL;
+
 export const bookApi = createApi({
   reducerPath: "bookApi",
-  baseQuery: fetchBaseQuery({ baseUrl: "/api/books" }),
+  baseQuery: fetchBaseQuery({ baseUrl }),
 
   tagTypes: ["Book"],
 
