@@ -60,7 +60,7 @@ export default function AddBook() {
   };
 
   return (
-    <div className="max-w-xl mx-auto mt-10 p-6 bg-white shadow rounded-md">
+    <div className="max-w-xl mx-auto mt-10 p-6 bg-auto rounded-md">
       <h2 className="text-2xl font-bold mb-4 text-center">Add New Book</h2>
 
       <Form {...form}>
